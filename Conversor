@@ -1,0 +1,73 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout << "que accion quieres hacer :\n (1) convergencia de monedas: \n (2)convergenia de distancias: \n (3) convergencia de pesos:\n";
+    int Oi;
+    int O;
+
+
+    double num;
+      
+
+    cin >> O;
+    switch (O)
+    {
+    case 1: cout << "¿A que moneda deseas convertir la moneda mexicania\n 1)WOO\n 2)YEN\n 3)YUAN\n 4)EUR\n 5)DOLLAR\n ";
+        cin >> Oi;
+        cout << "Introduzca la cantidad que deseas convertir: ";
+        cin >> num;
+        switch (Oi)
+        {
+
+        case 1:cout << "Son: " << num * 64.87 << " Wones";
+            break;
+        case 2:cout << "Son: " << num * 6.77 << "  Yenes";
+            break;
+        case 3:cout << "Son: " << num * 0.36 << " Yuanes";
+            break;
+        case 4:cout << "Son: " << num * 00.049 << " Euros";
+            break;
+        case 5:cout << "Son: " << num * 0.053 << " Dolares";
+            break;
+        }
+        break;
+    case 2: cout << "¿A que medida deseas converti los kilometros?: \n 1)pulgada\n 2)pies\n 3)centimetros\n 4)nanometros\n 5)años luz\n";
+        cin >> Oi;
+        cout << "Introduzca la cantidad que deseas convertir: ";
+        cin >> num;
+        switch (Oi)
+        {
+        case 1:cout << "Son: " << num * 39370.1 << " pulgadas";
+            break;
+        case 2:cout << "Son: " << num * 3280.84 << " pies";
+            break;
+        case 3:cout << "Son: " << num * 100000 << " centimetros";
+            break;
+        case 4:cout << "Son: " << num * 100000000000 << " nonametros";
+            break;
+        case 5:cout << "Son: " << num * 0.00000000000001057 << " años luz";
+            break;
+        }
+        break;
+    case 3: cout << "¿A que peso deseas converti los kilogramos?: \n 1)Ton\n 2)Oz\n 3)lb\n 4)µg\n 5)Tg\n";
+        cin >> Oi;
+        cout << "Introduzca la cantidad que deseas convertir: ";
+        cin >> num;
+        switch (Oi)
+        {
+        case 1:cout << "Son: " << num / 1000 << " Toneladas";
+            break;
+        case 2:cout << "Son: " << num * 35.274 << " Onzas";
+            break;
+        case 3:cout << "Son: " << num * 2.205 << " libras";
+            break;
+        case 4:cout << "Son: " << num * 0.000000001 << " Microgramos";
+            break;
+        case 5 :cout << "Son: " << num / 10000000000 << " Teragramo";
+            break;
+        }
+        break;
+
+    }
+}
